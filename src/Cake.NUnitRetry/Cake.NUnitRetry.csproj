@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Cake.NUnitRetry</PackageId>
+    <Company>Cake.NUnitRetry</Company>
+    <Authors>Cake.NUnitRetry</Authors>
+    <Product>Cake.NUnitRetry</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cake.Common" Version="0.25.0" />
+    <PackageReference Include="Cake.Core" Version="0.25.0" />
+
+    <!--PrivateAssets="All"-->
+  </ItemGroup>
+
+</Project>

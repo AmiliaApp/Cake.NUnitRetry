@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.NUnitRetry.Tests", "Cake.NUnitRetry.Tests\Cake.NUnitRetry.Tests.csproj", "{A0115585-E6EE-4463-8FFD-5E7860BFE5CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.NUnitRetry", "Cake.NUnitRetry\Cake.NUnitRetry.csproj", "{D89EA175-2640-4399-8AA7-8B03D23E6F8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0115585-E6EE-4463-8FFD-5E7860BFE5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0115585-E6EE-4463-8FFD-5E7860BFE5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0115585-E6EE-4463-8FFD-5E7860BFE5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0115585-E6EE-4463-8FFD-5E7860BFE5CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89EA175-2640-4399-8AA7-8B03D23E6F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89EA175-2640-4399-8AA7-8B03D23E6F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89EA175-2640-4399-8AA7-8B03D23E6F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89EA175-2640-4399-8AA7-8B03D23E6F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B39B4166-54CB-4C0A-93E4-49D68FEC479D}
+	EndGlobalSection
+EndGlobal
