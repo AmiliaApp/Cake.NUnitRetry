@@ -1,5 +1,5 @@
 trigger:
-- develop
+- development
 - master
 - release/*
 - hotfix/*
