@@ -31,7 +31,7 @@ namespace Cake.NUnitRetry
 
         public void Update(FilePath resultsToUpdatePath, FilePath updateSourcePath)
         {
-            var latestResults = _parser.Parse(updateSourcePath);
+            var latestResults = _parser.ParseResults(updateSourcePath);
 
             var file = _fileSystem.GetFile(resultsToUpdatePath);
             if (!file.Exists)

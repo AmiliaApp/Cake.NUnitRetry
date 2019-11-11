@@ -37,7 +37,7 @@ namespace Cake.NUnitRetry.Tests
                 var updater = new XmlResultUpdater(parser, _fileSystem, _environment);
                 updater.Update(_failedResultPath, _failedResultFixedPath);
 
-                var results = _parser.Parse(_failedResultPath);
+                var results = _parser.ParseResults(_failedResultPath);
 
                 Assert.AreEqual(1, results.Passed);
                 Assert.AreEqual(1, results.TestCases.Count(x => x.Result == Result.Passed));
@@ -56,7 +56,7 @@ namespace Cake.NUnitRetry.Tests
                 var updater = new XmlResultUpdater(parser, _fileSystem, _environment);
                 updater.Update(_failedResultPath, _failedResultFixedPath);
 
-                var results = _parser.Parse(_failedResultPath);
+                var results = _parser.ParseResults(_failedResultPath);
 
                 Assert.AreEqual(2, results.Passed);
                 Assert.AreEqual(2, results.TestCases.Count(x => x.Result == Result.Passed));

@@ -32,13 +32,13 @@ namespace Cake.NUnitRetry
 
         public bool HasFailedTests(FilePath testResultsPath)
         {
-            var result = Parse(testResultsPath);
+            var result = ParseResults(testResultsPath);
 
             return result.Failed != 0;
             
         }
 
-        public TestRun Parse(FilePath testResultsPath)
+        public TestRun ParseResults(FilePath testResultsPath)
         {
             if (testResultsPath == null)
             {

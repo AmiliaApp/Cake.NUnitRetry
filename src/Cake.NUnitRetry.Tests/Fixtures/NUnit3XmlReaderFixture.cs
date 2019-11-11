@@ -34,31 +34,31 @@ namespace Cake.NUnitRetry.Tests.Fixtures
         public TestRun ParseTestRunResultsNUnit2()
         {
             var deserializer = new XmlParser(FileSystem, Environment);
-            return deserializer.Parse(NUnit2ResultPath);
+            return deserializer.ParseResults(NUnit2ResultPath);
         }
 
         public TestRun ParseTestRunResultsNUnit3()
         {
             var deserializer = new XmlParser(FileSystem, Environment);
-            return deserializer.Parse(NUnit3ResultPath);
+            return deserializer.ParseResults(NUnit3ResultPath);
         }
 
         public TestRun ParseTestRunResultsNUnit3DuplicateTestName()
         {
             var deserializer = new XmlParser(FileSystem, Environment);
-            return deserializer.Parse(NUnit3ResultDuplicateNamePath);
+            return deserializer.ParseResults(NUnit3ResultDuplicateNamePath);
         }
 
         public TestRun ParseTestRunResultsNull()
         {
             var deserializer = new XmlParser(FileSystem, Environment);
-            return deserializer.Parse(null);
+            return deserializer.ParseResults(null);
         }
 
         public TestRun ParseTestRunResultsNonExistant()
         {
             var deserializer = new XmlParser(FileSystem, Environment);
-            return deserializer.Parse(NonExistantPath);
+            return deserializer.ParseResults(NonExistantPath);
         }
     }
 }
