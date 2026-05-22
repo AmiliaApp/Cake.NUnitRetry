@@ -46,11 +46,11 @@ namespace Cake.NUnitRetry.Tests
                 var fixture = new NUnit3XmlReaderFixture();
                 TestRun results = fixture.ParseTestRunResultsNUnit3();
 
-                Assert.AreEqual(results.Total, 18, "Wrong total amount");
-                Assert.AreEqual(results.Passed, 12, "Wrong passed amount");
-                Assert.AreEqual(results.Failed, 2, "Wrong failed amount");
-                Assert.AreEqual(results.Inconclusive, 1, "Wrong inconclusive amount");
-                Assert.AreEqual(results.Skipped, 3, "Wrong skipped amount");
+                Assert.AreEqual(18, results.Total, "Wrong total amount");
+                Assert.AreEqual(12, results.Passed, "Wrong passed amount");
+                Assert.AreEqual(2, results.Failed, "Wrong failed amount");
+                Assert.AreEqual(1, results.Inconclusive, "Wrong inconclusive amount");
+                Assert.AreEqual(3, results.Skipped, "Wrong skipped amount");
 
                 Assert.AreEqual(results.Passed, results.TestCases.Count(x => x.Result == Result.Passed), "Wrong passed test cases amount");
                 Assert.AreEqual(results.Failed, results.TestCases.Count(x => x.Result == Result.Failed), "Wrong failed test cases amount");
