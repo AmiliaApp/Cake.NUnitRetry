@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 
 namespace Cake.NUnitRetry
 {
+    [Serializable]
     public class XmlParsingException : Exception
     {
         public XmlParsingException()
