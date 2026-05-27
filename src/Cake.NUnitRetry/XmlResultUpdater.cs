@@ -10,23 +10,16 @@ namespace Cake.NUnitRetry
     {
         private readonly XmlParser _parser;
         private readonly IFileSystem _fileSystem;
-        private readonly ICakeEnvironment _environment;
 
-        public XmlResultUpdater(XmlParser xmlParser, IFileSystem fileSystem, ICakeEnvironment environment)
+        public XmlResultUpdater(XmlParser xmlParser, IFileSystem fileSystem)
         {
             if (fileSystem == null)
             {
                 throw new ArgumentNullException(nameof(fileSystem));
             }
 
-            if (environment == null)
-            {
-                throw new ArgumentNullException(nameof(environment));
-            }
-
             _parser = xmlParser;
             _fileSystem = fileSystem;
-            _environment = environment;
         }
 
         public void Update(FilePath resultsToUpdatePath, FilePath updateSourcePath)

@@ -34,7 +34,7 @@ namespace Cake.NUnitRetry.Tests
 
                 var parser = new XmlParser(_fileSystem, _environment);
 
-                var updater = new XmlResultUpdater(parser, _fileSystem, _environment);
+                var updater = new XmlResultUpdater(parser, _fileSystem);
                 updater.Update(_failedResultPath, _failedResultFixedPath);
 
                 var results = _parser.Parse(_failedResultPath);
@@ -53,7 +53,7 @@ namespace Cake.NUnitRetry.Tests
 
                 var parser = new XmlParser(_fileSystem, _environment);
 
-                var updater = new XmlResultUpdater(parser, _fileSystem, _environment);
+                var updater = new XmlResultUpdater(parser, _fileSystem);
                 updater.Update(_failedResultPath, _failedResultFixedPath);
 
                 var results = _parser.Parse(_failedResultPath);

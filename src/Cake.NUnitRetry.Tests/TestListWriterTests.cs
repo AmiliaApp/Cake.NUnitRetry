@@ -8,9 +8,9 @@ using NUnit.Framework;
 
 namespace Cake.NUnitRetry.Tests
 {
-    [TestFixture]
     public class TestListWriterTests
     {
+        [TestFixture]
         public sealed class TheConstructor
         {
             [Test]
@@ -34,6 +34,7 @@ namespace Cake.NUnitRetry.Tests
             }
         }
 
+        [TestFixture]
         public class TheWriteMethod
         {
             private readonly FilePath _testListFile = "/Working/testlist.txt";
